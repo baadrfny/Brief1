@@ -8,7 +8,10 @@ et je l’ai mis dans un fichier à part appelé style.css.
 
 J’ai lié ce fichier CSS à toutes les pages avec la ligne suivante :
 
-<link rel="stylesheet" href="style.css">
+link rel="stylesheet" href="style.css">
+
+
+
 
 
 Dans chaque page, j’ai remplacé les textes aléatoires
