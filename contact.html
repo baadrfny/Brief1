@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - École de Développement Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Campus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="accueil.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formation.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenement.html" onclick="closeMenu()">Événements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+                <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-info-section">
+                <h2>Prêt à démarrer votre carrière ?</h2>
+                <p>Contactez-nous pour en savoir plus sur nos formations, nos processus d'admission et comment nous pouvons vous aider à atteindre vos objectifs.</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="icon">📍</div>
+                        <div class="text">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de l'Innovation<br>75015 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">📞</div>
+                        <div class="text">
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89<br>Lun-Ven : 9h-18h</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">✉️</div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>contact@campusconnect.fr<br>Réponse sous 24h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-section">
+                <form onsubmit="event.preventDefault(); alert('Lorem ipsum dolor sit amet!');">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Jean Dupont">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="jean.dupont@ipsum.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Parlez-vous de notre projet..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+</body>
