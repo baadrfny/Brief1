@@ -1,0 +1,49 @@
+Dans ce projet, j’ai pris le code donné par Amin et je l’ai divisé en cinq fichiers HTML au lieu d’un seul fichier.
+
+Ensuite :
+
+J’ai séparé le code CSS qui était intégré dans les fichiers HTML et je l’ai mis dans un fichier à part appelé style.css.
+
+J’ai lié ce fichier CSS à toutes les pages avec la ligne suivante :
+
+link rel="stylesheet" href="style.css">
+
+Dans chaque page, j’ai remplacé les textes aléatoires par des textes corrects et cohérents.
+
+J’ai veillé à ce que le code soit bien organisé, propre et clair dans chaque page.
+
+Ce que j’ai appris aujourd’hui : problèmes et solutions
+
+1. Images trop grandes (Serve appropriately-sized images)
+   Problème : les images se chargent plus grandes que la taille affichée sur le site.
+   Solution : redimensionner les images (resize) à la taille correcte, et convertir les images en WebP ou AVIF (par exemple JPG → AVIF pour un fichier plus léger).
+
+2. Texte à faible contraste (Low-contrast text)
+   Problème : la couleur du texte est trop proche de celle du fond, rendant la lecture difficile.
+   Solution : choisir des couleurs avec un **contrast ratio** d’au moins 4.5:1, assombrir le texte ou éclaircir le fond pour une meilleure lisibilité.
+
+3. Balises anciennes ou non sémantiques (Deprecated / non-semantic tags)
+   Problème : utilisation incorrecte de balises comme <h1> à l’intérieur de <section> ou <article>.
+   Solution : utiliser <h1> uniquement pour le titre principal de la page, <h2> et <h3> pour les sous-titres, remplacer certaines balises par <div> à la place de <section> et réorganiser <article> dans le code. Ces changements améliorent le **SEO** et l’organisation du code, rendant le site plus professionnel.
+
+4. Nettoyage du fichier CSS
+   Problème : trop de commentaires inutiles dans le CSS, ce qui surcharge le fichier.
+   Solution : supprimer tous les commentaires du fichier CSS pour un code plus propre et plus léger.
+
+5. Amélioration du SEO pour atteindre 100
+   Problème : PageSpeed indique un score SEO incomplet.
+   Solution : ajouter une balise **meta description** dans <head> :
+
+
+<meta name="description" content="Site proposant des cours pour améliorer la performance et le SEO.">
+
+
+Organiser correctement les titres <h1>, <h2>, <h3>, optimiser les images et leurs formats (WebP et AVIF), et utiliser des balises sémantiques appropriées dans le contenu.
+
+Résultat final :
+
+* Site plus rapide et léger
+* Code plus propre et professionnel
+* SEO amélioré de manière significative
+* Expérience utilisateur plus claire et optimale
+
