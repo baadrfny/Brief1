@@ -1,0 +1,75 @@
+Dans ce projet, j’ai pris le code initial fourni par Amine et je l’ai réorganisé afin d’améliorer sa structure et sa maintenabilité.
+Tout d’abord, j’ai divisé le code en cinq fichiers HTML au lieu d’un seul, ce qui rend la navigation et la maintenance du site plus simples.
+
+Ensuite, j’ai séparé le code CSS intégré dans les fichiers HTML pour le placer dans un fichier externe nommé style.css.
+Ce fichier a été lié à toutes les pages à l’aide de la ligne suivante :
+
+<link rel="stylesheet" href="style.css">
+
+
+J’ai également remplacé les textes aléatoires par des contenus cohérents et pertinents, tout en veillant à ce que le code soit clair, propre et bien organisé sur chaque page.
+
+Enfin, j’ai conçu une page “Galerie” avec Figma, afin de planifier le design, la disposition et l’expérience utilisateur avant de procéder à l’intégration en code. Cette étape a permis d’obtenir un rendu visuel harmonieux et intuitif.
+
+Problèmes rencontrés et solutions apportées
+1. Images trop grandes (Serve appropriately-sized images)
+
+Problème : Les images étaient chargées à une taille supérieure à leur affichage réel sur le site.
+
+Solution : Redimensionner les images à la taille correcte et les convertir en formats optimisés comme WebP ou AVIF (ex. : JPG → AVIF) afin d’alléger les fichiers et d’améliorer les performances.
+
+2. Texte à faible contraste (Low-contrast text)
+
+Problème : La couleur du texte était trop proche de celle du fond, rendant la lecture difficile.
+
+Solution : Choisir des couleurs respectant un contrast ratio d’au moins 4.5:1, en assombrissant le texte ou en éclaircissant le fond pour une meilleure lisibilité.
+
+3. Balises anciennes ou non sémantiques (Deprecated / non-semantic tags)
+
+Problème : Mauvaise utilisation de balises, comme <h1> à l’intérieur de <section> ou <article>.
+
+Solution : Utiliser <h1> uniquement pour le titre principal, <h2> et <h3> pour les sous-titres, et remplacer certaines balises inadaptées par <div>.
+Cette réorganisation améliore le SEO et la structure sémantique du code.
+
+4. Nettoyage du fichier CSS
+
+Problème : Trop de commentaires inutiles surchargeaient le fichier CSS.
+
+Solution : Suppression des commentaires superflus pour obtenir un code plus léger, clair et lisible.
+
+5. Amélioration du SEO (objectif : score 100)
+
+Problème : Le rapport PageSpeed indiquait un score SEO incomplet.
+
+Solution :
+
+Ajout d’une balise meta description dans la section <head> :
+
+<meta name="description" content="Site proposant des cours pour améliorer la performance et le SEO.">
+
+
+Bonne hiérarchie des titres (<h1>, <h2>, <h3>).
+
+Optimisation des images (formats WebP / AVIF).
+
+Utilisation de balises sémantiques pertinentes.
+
+Résultats finaux
+
+🌐 Site plus rapide et léger
+
+💻 Code plus propre et professionnel
+
+🔍 SEO considérablement amélioré
+
+👁️ Expérience utilisateur plus claire et intuitive
+
+🎨 Page galerie conçue et planifiée avec Figma pour un design cohérent et ergonomique
+
+=======================================================================================================
+
+lien de site de netlify : https://fabulous-centaur-967186.netlify.app/
+
+Lien de Maquette : https://www.figma.com/design/sTOXCPT6BzeZgCALgcBpHO/Untitled?node-id=1-3636&t=Cb8kI0sspaWrf8Cg-1
+
+Le code complet du site web en HTML et CSS Dans GitHub repo (Brief1) + les images 
