@@ -1,65 +1,67 @@
-Dans ce projet, j’ai pris le code donné par Amin et je l’ai divisé en cinq fichiers HTML au lieu d’un seul fichier.
+Dans ce projet, j’ai pris le code initial fourni par Amine et je l’ai réorganisé afin d’améliorer sa structure et sa maintenabilité.
+Tout d’abord, j’ai divisé le code en cinq fichiers HTML au lieu d’un seul, ce qui rend la navigation et la maintenance du site plus simples.
 
-Ensuite :
-
-J’ai séparé le code CSS qui était intégré dans les fichiers HTML et je l’ai mis dans un fichier à part appelé style.css.
-
-J’ai lié ce fichier CSS à toutes les pages avec la ligne suivante :
+Ensuite, j’ai séparé le code CSS intégré dans les fichiers HTML pour le placer dans un fichier externe nommé style.css.
+Ce fichier a été lié à toutes les pages à l’aide de la ligne suivante :
 
 <link rel="stylesheet" href="style.css">
 
 
-Dans chaque page, j’ai remplacé les textes aléatoires par des textes corrects et cohérents.
+J’ai également remplacé les textes aléatoires par des contenus cohérents et pertinents, tout en veillant à ce que le code soit clair, propre et bien organisé sur chaque page.
 
-J’ai veillé à ce que le code soit bien organisé, propre et clair dans chaque page.
+Enfin, j’ai conçu une page “Galerie” avec Figma, afin de planifier le design, la disposition et l’expérience utilisateur avant de procéder à l’intégration en code. Cette étape a permis d’obtenir un rendu visuel harmonieux et intuitif.
 
-J’ai également conçu une page galerie pour le site en utilisant Figma, afin de planifier et visualiser la disposition, le design et l’expérience utilisateur avant de coder la page.
+Problèmes rencontrés et solutions apportées
+1. Images trop grandes (Serve appropriately-sized images)
 
-Ce que j’ai appris aujourd’hui : problèmes et solutions
+Problème : Les images étaient chargées à une taille supérieure à leur affichage réel sur le site.
 
-Images trop grandes (Serve appropriately-sized images)
+Solution : Redimensionner les images à la taille correcte et les convertir en formats optimisés comme WebP ou AVIF (ex. : JPG → AVIF) afin d’alléger les fichiers et d’améliorer les performances.
 
-Problème : les images se chargent plus grandes que la taille affichée sur le site.
+2. Texte à faible contraste (Low-contrast text)
 
-Solution : redimensionner les images à la taille correcte, et convertir les images en WebP ou AVIF (par exemple JPG → AVIF pour un fichier plus léger).
+Problème : La couleur du texte était trop proche de celle du fond, rendant la lecture difficile.
 
-Texte à faible contraste (Low-contrast text)
+Solution : Choisir des couleurs respectant un contrast ratio d’au moins 4.5:1, en assombrissant le texte ou en éclaircissant le fond pour une meilleure lisibilité.
 
-Problème : la couleur du texte est trop proche de celle du fond, rendant la lecture difficile.
+3. Balises anciennes ou non sémantiques (Deprecated / non-semantic tags)
 
-Solution : choisir des couleurs avec un contrast ratio d’au moins 4.5:1, assombrir le texte ou éclaircir le fond pour une meilleure lisibilité.
+Problème : Mauvaise utilisation de balises, comme <h1> à l’intérieur de <section> ou <article>.
 
-Balises anciennes ou non sémantiques (Deprecated / non-semantic tags)
+Solution : Utiliser <h1> uniquement pour le titre principal, <h2> et <h3> pour les sous-titres, et remplacer certaines balises inadaptées par <div>.
+Cette réorganisation améliore le SEO et la structure sémantique du code.
 
-Problème : utilisation incorrecte de balises comme <h1> à l’intérieur de <section> ou <article>.
+4. Nettoyage du fichier CSS
 
-Solution : utiliser <h1> uniquement pour le titre principal de la page, <h2> et <h3> pour les sous-titres, remplacer certaines balises par <div> à la place de <section> et réorganiser <article> dans le code. Ces changements améliorent le SEO et l’organisation du code, rendant le site plus professionnel.
+Problème : Trop de commentaires inutiles surchargeaient le fichier CSS.
 
-Nettoyage du fichier CSS
+Solution : Suppression des commentaires superflus pour obtenir un code plus léger, clair et lisible.
 
-Problème : trop de commentaires inutiles dans le CSS, ce qui surcharge le fichier.
+5. Amélioration du SEO (objectif : score 100)
 
-Solution : supprimer tous les commentaires du fichier CSS pour un code plus propre et plus léger.
+Problème : Le rapport PageSpeed indiquait un score SEO incomplet.
 
-Amélioration du SEO pour atteindre 100
+Solution :
 
-Problème : PageSpeed indique un score SEO incomplet.
-
-Solution : ajouter une balise meta description dans <head> :
+Ajout d’une balise meta description dans la section <head> :
 
 <meta name="description" content="Site proposant des cours pour améliorer la performance et le SEO.">
 
 
-Organiser correctement les titres <h1>, <h2>, <h3>, optimiser les images et leurs formats (WebP et AVIF), et utiliser des balises sémantiques appropriées dans le contenu.
+Bonne hiérarchie des titres (<h1>, <h2>, <h3>).
 
-Résultat final
+Optimisation des images (formats WebP / AVIF).
 
-Site plus rapide et léger
+Utilisation de balises sémantiques pertinentes.
 
-Code plus propre et professionnel
+Résultats finaux
 
-SEO amélioré de manière significative
+🌐 Site plus rapide et léger
 
-Expérience utilisateur plus claire et optimale
+💻 Code plus propre et professionnel
 
-Page galerie conçue et planifiée avec Figma pour un design cohérent et intuitif
+🔍 SEO considérablement amélioré
+
+👁️ Expérience utilisateur plus claire et intuitive
+
+🎨 Page galerie conçue et planifiée avec Figma pour un design cohérent et ergonomique
